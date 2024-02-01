@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>웹페이지 프린트 데모 페이지</title>
+
+    <link href="/index.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main>
+      <section class="left">
+        <canvas id="paper"></canvas>
+      </section>
+
+      <section id="control" class="right">
+        <div id="controls">
+          <div class="range">
+            <input
+              type="range"
+              name="blur"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+            <label for="blur"></label>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="brightness"
+              min="0"
+              max="500"
+              step="1"
+              value="100"
+            />
+            <label for="brightness"></label>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="contrast"
+              min="0"
+              max="500"
+              step="1"
+              value="100"
+            />
+            <label for="contrast"></label>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="grayscale"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+            <label for="grayscale"></label>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="hue-rotate"
+              min="0"
+              max="360"
+              step="1"
+              value="0"
+            />
+            <label for="hue-rotate"></label>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="invert"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+            <label for="invert"></label>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="opacity"
+              min="0"
+              max="100"
+              step="1"
+              value="100"
+            />
+            <label for="opacity"></label>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="saturate"
+              min="0"
+              max="500"
+              step="1"
+              value="100"
+            />
+            <label for="saturate"></label>
+          </div>
+          <div class="range">
+            <input
+              type="range"
+              name="sepia"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+            <label for="sepia"></label>
+          </div>
+          <button id="button-print">프린트</button>
+          <button id="button-save">PDF로 저장</button>
+        </div>
+      </section>
+    </main>
+
+    <img id="image-paper" src="/paper.jpg" style="display: none" />
+
+    <script src="/lib/html2canvas.min.js"></script>
+    <script src="/lib/jspdf.umd.min.js"></script>
+    <script src="/index.js"></script>
+  </body>
+</html>

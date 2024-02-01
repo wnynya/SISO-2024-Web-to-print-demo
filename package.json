@@ -1,0 +1,13 @@
+{
+  "name": "print-on-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.mjs",
+  "scripts": {
+    "start": "node src/app.mjs"
+  },
+  "author": "",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
